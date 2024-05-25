@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+	
   </head>
 
   <body>
@@ -25,8 +26,8 @@
       <!-- EDIT HERE -->
       <h3 class="STARDUST1">01/02/2024</h3>
       <h1 class="STARDUST2">HL &amp; TN</h1>
-      <h3 class="STARDUST3">IU EM <strong>❤</strong></h3>
-      <img class="img" src="xautinh.jpg" alt="JUNO_OKYO" />
+      <h3 class="STARDUST3" id="numdays">IU EM <strong>❤</strong></h3>
+      <img class="img" src="xautinh.jpg" alt="LONG IU THUÝ" />
       <canvas id="pinkboard"></canvas>
     </div>
 
@@ -34,5 +35,14 @@
     <script src="js/main.js"></script>
     <script src="js/particle.js"></script>
     <script src="js/universe.js"></script>
+	<script>
+		function displayResult() {
+			document.getElementById("numdays").innerHTML = "Have a nice day!";
+		}
+        var dropdt = new Date("2024-02-01");
+		var pickdt = new Date().getTime();
+		var days = parseInt((pickdt - dropdt) / (24 * 3600 * 1000));
+        document.getElementById("numdays").innerHTML=" <strong>❤</strong> IU EM ĐƯỢC: "+days+" NGÀY <strong>❤</strong>";
+    </script>
   </body>
 </html>
