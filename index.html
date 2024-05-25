@@ -36,13 +36,10 @@
     <script src="js/particle.js"></script>
     <script src="js/universe.js"></script>
 	<script>
-		function displayResult() {
-			document.getElementById("numdays").innerHTML = "Have a nice day!";
-		}
         var dropdt = new Date("2024-02-01");
-		var pickdt = new Date().getTime();
-		var days = parseInt((pickdt - dropdt) / (24 * 3600 * 1000));
-        document.getElementById("numdays").innerHTML=" <strong>❤</strong> IU EM ĐƯỢC: "+days+" NGÀY <strong>❤</strong>";
+		var pickdt = new Date();
+		var days = parseInt((pickdt - dropdt) / (24 * 3600 * 1000)) + 1;
+        document.getElementById("numdays").innerHTML=" <strong>❤</strong> IU EM ĐƯỢC "+days+" NGÀY <strong>❤</strong>";
     </script>
   </body>
 </html>
